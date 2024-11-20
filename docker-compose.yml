@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: no_drums_app
+    environment:
+      - MODEL_PATH=/root/.config/spleeter/pretrained_models
+    volumes:
+      - .:/app
+    command: ["python", "app.py"]
+    ports:
+      - "5000:5000"
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: no_drums_test
+    environment:
+      - MODEL_PATH=/root/.config/spleeter/pretrained_models
+    volumes:
+      - .:/app
+    command: ["pytest", "--junitxml=report.xml"]
+

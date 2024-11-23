@@ -21,8 +21,7 @@ Welcome to **NoDrums**, the tool that intelligently removes drum sounds from aud
    ```
 2. Build and run the Docker container:
    ```bash
-   docker build -t nodrums .
-   docker run --rm -p 5000:5000 nodrums
+   docker compose up
    ```
 3. Access the app at `http://localhost:5000`.
 
@@ -44,6 +43,9 @@ Welcome to **NoDrums**, the tool that intelligently removes drum sounds from aud
    ```
 4. Access the app at `http://localhost:5000`.
 
+#### Demo
+Example Docker compose build and run:
+![Example Docker build and run process](nodrums-docker.gif)
 ---
 
 ## **Contributing**

@@ -26,5 +26,5 @@ ENV PYTHONPATH="/app"
 #ENV MODEL_PATH=/root/.config/spleeter/pretrained_models
 
 # Default command for running tests
-CMD ["pytest", "--junitxml=report.xml"]
+CMD ["python", "app.py"]
 

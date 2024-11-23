@@ -42,7 +42,7 @@ Welcome to **NoDrums**, the tool that intelligently removes drum sounds from aud
    python app.py
    ```
 4. Access the app at `http://localhost:5000`.
-
+![Example Docker build and run process](nodrums-docker.gif)
 ---
 
 ## **Contributing**

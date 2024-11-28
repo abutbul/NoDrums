@@ -11,6 +11,11 @@ Welcome to **NoDrums**, the tool that intelligently removes drum sounds from aud
 
 ---
 
+## **To Do**
+- unique check on youtube url to prevent additional downloads once cached
+
+---
+
 ## **Getting Started**
 
 ### **Run with Docker**
